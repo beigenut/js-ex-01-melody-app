@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* CUSTOME CSS */
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  margin: 25% 0 20px 0;
+  font-size: 2.7rem;
+}
+
+header p {
+  font-size: 1.5rem;
+}
+
+/* CIRCLE */
+.color-circle>div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  z-index: -1;
+}
+
+@keyframes animate {
+  0% {
+    bottom: 0;
+    left: 20%;
+  }
+
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+
+  100% {
+    bottom: 0;
+    left: 70%;
+  }
+}
+
+/* PADS */
+.note-pad {
+  width: 100%;
+  display: flex;
+}
+
+.note-pad .pads {
+  width: 100px;
+  height: 200px;
+  background: #60d394;
+  flex: 1;
+  position: relative;
+  transition: 0.7s;
+}
+
+.note-pad .pads:hover {
+  opacity: 0.7;
+}
+
+.note-pad .pads:nth-child(2) {
+  background: #d36060;
+}
+
+.note-pad .pads:nth-child(3) {
+  background: #c060d3;
+}
+
+.note-pad .pads:nth-child(4) {
+  background: #d3d160;
+}
+
+.note-pad .pads:nth-child(5) {
+  background: #6860d3;
+}
+
+.note-pad .pads:nth-child(6) {
+  background: #60b2d3;
+}
+
+.note-pad i {
+  font-size: 3rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
